@@ -7,3 +7,8 @@ header {
   color: #ffffff;
   background: linear-gradient(0deg, #464341 0%, #010101 100%);
 }
+
+.header-logo {
+  display: flex;
+  gap: 0.5rem;
+}
