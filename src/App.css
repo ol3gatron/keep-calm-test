@@ -1,1 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap');
 
+@font-face {
+  font-family: 'Orchidea Pro';
+  src: local('Orchidea Pro Medium'), local('Orchidea-Pro-Medium'),
+      url("./assets/fonts/OrchideaPro-Medium.woff2") format('woff2'),
+      url("./assets/fonts/OrchideaPro-Medium.woff") format('woff'),
+      url("./assets/fonts/OrchideaPro-Medium.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+main {
+  padding: 200px 0;
+}
+
+
+
+section > .section-title {
+  text-transform: uppercase;
+  font-family: "Orchidea Pro";
+  font-size: 3rem;
+  font-weight: 500;
+  color: #141414;
+}

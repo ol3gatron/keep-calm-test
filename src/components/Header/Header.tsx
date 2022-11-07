@@ -1,5 +1,6 @@
 import HeaderIcon from "../../assets/icons/Vector.svg"
 import HeaderText from "../../assets/icons/Circeya.svg"
+import "./Header.css"
 
 const Header = () => {
   return (

@@ -1,9 +1,10 @@
+import Header from './components/Header/Header'
 import './App.css'
 
 const App = () => {
   return (
     <div className='app'>
-      app
+      <Header />
     </div>
   )
 }
