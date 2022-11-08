@@ -18,15 +18,47 @@
 }
 
 main {
-  padding: 200px 0;
+  padding: 80px 0;
+  font-family: 'Orchidea Pro';
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+}
 
-
-section > .section-title {
+.main-title {
+  font-size: 1.5rem;
+  font-family: 'Orchidea Pro';
   text-transform: uppercase;
-  font-family: "Orchidea Pro";
-  font-size: 3rem;
-  font-weight: 500;
+  line-height: 130%;
   color: #141414;
+  margin: 0 1.3rem;
 }
+
+.section-image {
+  height: 370px;
+  margin-top: 4rem;
+}
+
+.section-image > img {
+  height: 100%;
+  width: 100%;
+}
+
+.section-text {
+  padding: 3rem 3.5rem;
+}
+
+.section-title {
+  font-family: 'Orchidea Pro';
+}
+
+.section-desc {
+  margin-top: 1.3rem;
+}
+
+.desc-text {
+  font-family: 'Manrope', sans-serif;
+}
+

@@ -2,13 +2,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 250px;
-  height: 100px;
+  height: 60px;
   color: #ffffff;
   background: linear-gradient(0deg, #464341 0%, #010101 100%);
+  padding: 20px;
 }
 
 .header-logo {
   display: flex;
   gap: 0.5rem;
+}
+
+.header-logo > img {
+  height: 24px;
 }
