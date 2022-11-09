@@ -18,7 +18,7 @@
 }
 
 .app-title {
-  font-family: 'Orchidea Pro';
+  font-family: 'Orchidea Pro', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 130%;

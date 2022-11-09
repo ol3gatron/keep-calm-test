@@ -1,0 +1,20 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-left: 1.3rem;
+}
+
+.slider-title {
+  font-family: 'Orchidea Pro', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.slider-image {
+  height: 345px;
+  width: 225px;
+}
