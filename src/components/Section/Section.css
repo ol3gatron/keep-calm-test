@@ -1,0 +1,31 @@
+section {
+  display: flex;
+  flex-direction: column;
+  color: #141414;
+}
+
+.section-image, .section-image > img {
+  height: 370px;
+  width: 100%;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2.5rem 1.3rem 3.5rem;
+}
+
+.section-text-subtitle {
+  font-family: 'Orchidea Pro', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.section-text-description {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 130%;
+}
