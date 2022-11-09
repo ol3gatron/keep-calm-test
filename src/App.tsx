@@ -1,5 +1,6 @@
 import Header from './components/Header/Header'
 import Section from './components/Section/Section'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 import image from "./assets/images/Mask Group.png"
@@ -17,6 +18,11 @@ const App = () => {
       <Header />
       <h1 className='app-title'>{TITLE}</h1>
       <Section image={image} subtitle={SUBTITLE} text={TEXT} />
+      <Section image={image1} subtitle={SUBTITLE} text={TEXT} />
+      <h1 className='app-title'>{TITLE}</h1>
+      <Section image={image2} subtitle={SUBTITLE} text={TEXT} />
+      <Section image={image3} subtitle={SUBTITLE} text={TEXT} />
+      <Footer />
     </div>
   )
 }
