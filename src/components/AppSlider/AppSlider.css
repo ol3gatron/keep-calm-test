@@ -12,9 +12,15 @@
   line-height: 130%;
   text-transform: uppercase;
   color: #141414;
+  padding-left: 1.3rem;
+  margin-bottom: 3.5rem;
 }
 
-.slider-image {
+.slider {
+  padding-left: 1.3rem;
+}
+
+.slider-div, .slider-div > img {
   height: 345px;
   width: 225px;
 }

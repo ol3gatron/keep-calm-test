@@ -1,9 +1,7 @@
-import { useState, useRef } from "react"
-import Slider from "react-slick"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Mousewheel } from "swiper"
+import 'swiper/css'
 import "./AppSlider.css"
-import { useScrollBlock } from "../../hooks/useScrollBlock"
-import { useScrollDirection } from 'react-use-scroll-direction'
-
 
 import sliderImage1 from "../../assets/images/Slider Image (1).png"
 import sliderImage2 from "../../assets/images/Slider Image (2).png"
@@ -16,70 +14,54 @@ import sliderImage8 from "../../assets/images/Slider Image (8).png"
 
 
 const AppSlider = () => {
-
-  const [blockScroll, allowScroll] = useScrollBlock()
-
-  const settings = {
-    className: "center",
-    infinite: false,
-    centerPadding: "60px",
-    slidesToShow: 1.5,
-    swipeToSlide: true,
-  }
-
-  const sliderRef = useRef()
-
-  const [isMouseOnSlider, setIsMouseOnSlider] = useState(false)
-
-  const handleWheel = () => {
-    sliderRef.current.slickNext()
-  }
-
-  const handleMouseEnter = () => {
-    blockScroll()
-  }
-
-  const handleMouseLeave = () => {
-    allowScroll()
-  }
-
   return (
-    <div
-      className="slider-container"
-      onWheel={handleWheel}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <h1 className="slider-title">
-        Lorem ipsumdolor sit amet
-      </h1>
-      <Slider {...settings} ref={sliderRef} >
-          <div>
-            <img src={sliderImage1} className="slider-image" alt="image" />
-          </div>
-          <div>
-            <img src={sliderImage2} className="slider-image" alt="image" />
-          </div>
-          <div>
-            <img src={sliderImage3} className="slider-image" alt="image" />
-          </div>
-          <div>
-            <img src={sliderImage4} className="slider-image" alt="image" />
-          </div>
-          <div>
-            <img src={sliderImage5} className="slider-image" alt="image" />
-          </div>
-          <div>
-            <img src={sliderImage6} className="slider-image" alt="image" />
-          </div>
-          <div>
-            <img src={sliderImage7} className="slider-image" alt="image" />
-          </div>
-          <div>
-            <img src={sliderImage8} className="slider-image" alt="image" />
-          </div>
-        </Slider>
-    </div>
+    <>
+    <h1 className="slider-title">Lorem ipsumdolor sit amet</h1>
+    <Swiper
+        modules={[Mousewheel]}
+        spaceBetween={50}
+        slidesPerView={1.5}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        className="slider"
+        mousewheel
+      >
+      <SwiperSlide>
+        <div className="slider-div">
+          <img src={sliderImage1} alt="image"/>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="slider-div">
+          <img src={sliderImage2} alt="image"/>
+        </div>
+      </SwiperSlide><SwiperSlide>
+        <div className="slider-div">
+          <img src={sliderImage3} alt="image"/>
+        </div>
+      </SwiperSlide><SwiperSlide>
+        <div className="slider-div">
+          <img src={sliderImage4} alt="image"/>
+        </div>
+      </SwiperSlide><SwiperSlide>
+        <div className="slider-div">
+          <img src={sliderImage5} alt="image"/>
+        </div>
+      </SwiperSlide><SwiperSlide>
+        <div className="slider-div">
+          <img src={sliderImage6} alt="image"/>
+        </div>
+      </SwiperSlide><SwiperSlide>
+        <div className="slider-div">
+          <img src={sliderImage7} alt="image"/>
+        </div>
+      </SwiperSlide><SwiperSlide>
+        <div className="slider-div">
+          <img src={sliderImage8} alt="image"/>
+        </div>
+      </SwiperSlide>
+      </Swiper>
+      </>
   )
 }
 export default AppSlider
