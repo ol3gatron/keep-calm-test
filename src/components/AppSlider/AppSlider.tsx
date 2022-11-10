@@ -12,7 +12,6 @@ import sliderImage6 from "../../assets/images/Slider Image (6).png"
 import sliderImage7 from "../../assets/images/Slider Image (7).png"
 import sliderImage8 from "../../assets/images/Slider Image (8).png"
 
-
 const AppSlider = () => {
   return (
     <>
@@ -24,42 +23,42 @@ const AppSlider = () => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         className="slider"
-        mousewheel
+        mousewheel={{ releaseOnEdges: true, forceToAxis: true }}
       >
-      <SwiperSlide>
-        <div className="slider-div">
-          <img src={sliderImage1} alt="image"/>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="slider-div">
-          <img src={sliderImage2} alt="image"/>
-        </div>
-      </SwiperSlide><SwiperSlide>
-        <div className="slider-div">
-          <img src={sliderImage3} alt="image"/>
-        </div>
-      </SwiperSlide><SwiperSlide>
-        <div className="slider-div">
-          <img src={sliderImage4} alt="image"/>
-        </div>
-      </SwiperSlide><SwiperSlide>
-        <div className="slider-div">
-          <img src={sliderImage5} alt="image"/>
-        </div>
-      </SwiperSlide><SwiperSlide>
-        <div className="slider-div">
-          <img src={sliderImage6} alt="image"/>
-        </div>
-      </SwiperSlide><SwiperSlide>
-        <div className="slider-div">
-          <img src={sliderImage7} alt="image"/>
-        </div>
-      </SwiperSlide><SwiperSlide>
-        <div className="slider-div">
-          <img src={sliderImage8} alt="image"/>
-        </div>
-      </SwiperSlide>
+        <SwiperSlide>
+          <div className="slider-div">
+            <img src={sliderImage1} alt="image"/>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slider-div">
+            <img src={sliderImage2} alt="image"/>
+          </div>
+        </SwiperSlide><SwiperSlide>
+          <div className="slider-div">
+            <img src={sliderImage3} alt="image"/>
+          </div>
+        </SwiperSlide><SwiperSlide>
+          <div className="slider-div">
+            <img src={sliderImage4} alt="image"/>
+          </div>
+        </SwiperSlide><SwiperSlide>
+          <div className="slider-div">
+            <img src={sliderImage5} alt="image"/>
+          </div>
+        </SwiperSlide><SwiperSlide>
+          <div className="slider-div">
+            <img src={sliderImage6} alt="image"/>
+          </div>
+        </SwiperSlide><SwiperSlide>
+          <div className="slider-div">
+            <img src={sliderImage7} alt="image"/>
+          </div>
+        </SwiperSlide><SwiperSlide>
+          <div className="slider-div">
+            <img src={sliderImage8} alt="image"/>
+          </div>
+        </SwiperSlide>
       </Swiper>
       </>
   )
