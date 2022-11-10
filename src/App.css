@@ -28,3 +28,10 @@
 
 
 
+@media (min-width: 900px) {
+  .app-title {
+    font-size: 3rem;
+    padding: 12rem 16rem 7.5rem;
+  }
+}
+

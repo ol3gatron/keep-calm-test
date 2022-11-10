@@ -29,3 +29,32 @@ section {
   font-weight: 500;
   line-height: 130%;
 }
+
+@media (min-width: 900px) {
+  section {
+    flex-direction: row;
+    margin-right: 16rem;
+  }
+
+  section:nth-child(odd) {
+    flex-direction: row-reverse;
+    margin-right: 0;
+    margin-left: 16rem;
+  }
+
+  .section-image {
+    flex: 5;
+  }
+
+  .section-text {
+    flex: 5;
+  }
+
+  .section-text-subtitle {
+    font-size: 48px;
+  }
+
+  .section-text-description {
+    font-size: 1.1rem;
+  }
+}

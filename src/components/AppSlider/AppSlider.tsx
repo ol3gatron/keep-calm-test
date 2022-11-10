@@ -14,7 +14,7 @@ import sliderImage8 from "../../assets/images/Slider Image (8).png"
 
 const AppSlider = () => {
   return (
-    <>
+    <div className='slider-container'>
     <h1 className="slider-title">Lorem ipsumdolor sit amet</h1>
     <Swiper
         modules={[Mousewheel]}
@@ -60,7 +60,7 @@ const AppSlider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      </>
+      </div>
   )
 }
 export default AppSlider

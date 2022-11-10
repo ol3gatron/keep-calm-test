@@ -18,13 +18,15 @@ const App = () => {
   return (
     <div className='app'>
       <Header />
-      <h1 className='app-title'>{TITLE}</h1>
-      <Section image={image} subtitle={SUBTITLE} text={TEXT} />
-      <Section image={image1} subtitle={SUBTITLE} text={TEXT} />
-      <AppSlider/>
-      <h1 className='app-title'>{TITLE}</h1>
-      <Section image={image2} subtitle={SUBTITLE} text={TEXT} />
-      <Section image={image3} subtitle={SUBTITLE} text={TEXT} />
+      <main>
+        <h1 className='app-title'>{TITLE}</h1>
+        <Section image={image} subtitle={SUBTITLE} text={TEXT} />
+        <Section image={image1} subtitle={SUBTITLE} text={TEXT} />
+        <AppSlider/>
+        <h1 className='app-title'>{TITLE}</h1>
+        <Section image={image2} subtitle={SUBTITLE} text={TEXT} />
+        <Section image={image3} subtitle={SUBTITLE} text={TEXT} />
+      </main>
       <Footer />
     </div>
   )

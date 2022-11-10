@@ -1,8 +1,5 @@
 .slider-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
-  padding-left: 1.3rem;
+
 }
 
 .slider-title {
@@ -23,4 +20,14 @@
 .slider-div, .slider-div > img {
   height: 345px;
   width: 225px;
+}
+
+@media (min-width: 900px) {
+  .slider-container, .slider-title {
+    padding-left: 16.5rem;
+  }
+
+  .slider-title {
+    font-size: 3rem;
+  }
 }
