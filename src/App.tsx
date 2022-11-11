@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 import Header from './components/Header/Header'
 import Section from './components/Section/Section'
 import Footer from './components/Footer/Footer'
@@ -15,14 +17,28 @@ const App = () => {
   const SUBTITLE = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
   const TEXT = "Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
 
+  const [windowSize, setWindowSize] = useState(0)
+
+  useEffect(() => {
+    setWindowSize(window.innerWidth)
+  }, [])
+
+  useEffect(() => {
+    window.addEventListener("resize", (e) => {
+      setWindowSize(window.innerWidth)
+    })
+  }, [windowSize])
+
+  console.log(windowSize)
+
   return (
     <div className='app'>
-      <Header />
+      <Header windowWidth={windowSize} />
       <main>
         <h1 className='app-title'>{TITLE}</h1>
         <Section image={image} subtitle={SUBTITLE} text={TEXT} />
         <Section image={image1} subtitle={SUBTITLE} text={TEXT} />
-        <AppSlider/>
+        <AppSlider windowWidth={windowSize} />
         <h1 className='app-title'>{TITLE}</h1>
         <Section image={image2} subtitle={SUBTITLE} text={TEXT} />
         <Section image={image3} subtitle={SUBTITLE} text={TEXT} />

@@ -12,14 +12,18 @@ import sliderImage6 from "../../assets/images/Slider Image (6).png"
 import sliderImage7 from "../../assets/images/Slider Image (7).png"
 import sliderImage8 from "../../assets/images/Slider Image (8).png"
 
-const AppSlider = () => {
+interface props {
+  windowWidth: number
+}
+
+const AppSlider = ({windowWidth}: props) => {
   return (
     <div className='slider-container'>
     <h1 className="slider-title">Lorem ipsumdolor sit amet</h1>
     <Swiper
         modules={[Mousewheel]}
         spaceBetween={50}
-        slidesPerView={window.innerWidth > 900 ? 4.5 : 1.5}
+        slidesPerView={windowWidth > 900 ? 4.5 : 1.5}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         className="slider"

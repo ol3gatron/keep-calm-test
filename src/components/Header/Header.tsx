@@ -3,7 +3,11 @@ import HeaderText from "../../assets/icons/Circeya.svg"
 import PhoneIcon from "../../assets/icons/PhoneIcon.svg"
 import "./Header.css"
 
-const Header = () => {
+interface props {
+  windowWidth: number
+}
+
+const Header = ({windowWidth}: props ) => {
   return (
     <header>
       <div className="header-logo">
@@ -11,7 +15,7 @@ const Header = () => {
         <img src={HeaderText} alt="Circeya" />
       </div>
       <div className="header-phone">
-        {window.innerWidth > 900 ? "+7 (495) 495-49-54" : <img src={PhoneIcon} alt="Call" />}
+        {windowWidth > 900 ? "+7 (495) 495-49-54" : <img src={PhoneIcon} alt="Call" />}
       </div>
     </header>
   )
