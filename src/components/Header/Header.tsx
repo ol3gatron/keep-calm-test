@@ -11,7 +11,7 @@ const Header = () => {
         <img src={HeaderText} alt="Circeya" />
       </div>
       <div className="header-phone">
-        <img src={PhoneIcon} alt="Call" />
+        {window.innerWidth > 900 ? "+7 (495) 495-49-54" : <img src={PhoneIcon} alt="Call" />}
       </div>
     </header>
   )

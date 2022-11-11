@@ -19,11 +19,11 @@ const AppSlider = () => {
     <Swiper
         modules={[Mousewheel]}
         spaceBetween={50}
-        slidesPerView={1.5}
+        slidesPerView={window.innerWidth > 900 ? 4.5 : 1.5}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         className="slider"
-        mousewheel={{ releaseOnEdges: true, forceToAxis: true }}
+        mousewheel={{  releaseOnEdges: true }}
       >
         <SwiperSlide>
           <div className="slider-div">

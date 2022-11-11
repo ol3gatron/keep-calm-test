@@ -16,3 +16,9 @@ header {
 .header-logo > img {
   height: 24px;
 }
+
+@media (min-width: 900px) {
+  header {
+    padding: 2.1rem 16rem;
+  }
+}
